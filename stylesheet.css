@@ -1,0 +1,75 @@
+body {
+	text-align: center;
+	font-family: "Open Sans";
+}
+
+#title {
+	font-size: 25px;
+}
+
+#type {
+	font-size: 20px;
+}
+
+#time {
+	font-size: 40px;
+}
+
+#buttons {
+	margin-bottom: 50px;
+}
+
+button {
+	border-radius: 5px;
+	height: 30px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: none;
+	background-color: #E8E8E8;
+}
+
+#pomodoro {
+	height: 300px;
+	width: 300px;
+	border-radius: 50%;
+	border: solid crimson;
+	margin: 0 auto;
+	position: relative;
+}
+
+#display {
+	position: relative;
+	top: 70px;
+}
+
+#pomodoroFiller {
+	position: absolute;
+	height: 290px;
+	width: 290px;
+	border-radius: 50%;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+}
+
+#filler {
+	position: absolute;
+	height: 290px;
+	width: 290px;
+	background-color: crimson;
+	top: 290px;
+}
+
+.startAnimation {
+	animation-name: filler;
+	animation-timing-function: linear;
+}
+
+@keyframes filler {
+	from {top: 290px;}
+	to {top: 0px;}
+}
