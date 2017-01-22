@@ -6,7 +6,7 @@ var resumeButton = document.getElementById("resume");
 var typeDisplay = document.getElementById("type");
 var filler = document.getElementById("filler");
 
-var seconds = 5;//1500; // how many seconds there is remaining
+var seconds = 1500; // how many seconds there is remaining
 var isPaused = false;
 var setIntervalID;
 var started = false; // so user can't have multiple startCountdown()'s starting setIntervals and running down the time faster
