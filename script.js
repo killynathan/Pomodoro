@@ -41,14 +41,14 @@ function secondsToMins(_seconds) {
 function incSessionLength() {
 	maxSeconds += 60;
 	sessionLengthDisplay.innerHTML = secondsToMins(maxSeconds);
-	timeDisplay.innerHTML = secondsToTime(maxSeconds);
+	if (!started) timeDisplay.innerHTML = secondsToTime(maxSeconds);
 }
 
 function decSessionLength() {
 	if (maxSeconds >= 120) {
 		maxSeconds -= 60;
 		sessionLengthDisplay.innerHTML = secondsToMins(maxSeconds);
-		timeDisplay.innerHTML = secondsToTime(maxSeconds);
+		if (!started) timeDisplay.innerHTML = secondsToTime(maxSeconds);
 	}
 }
 
