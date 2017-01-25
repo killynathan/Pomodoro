@@ -4,12 +4,12 @@ body {
 }
 
 #title {
-	font-size: 25px;
+	font-size: 1.55em;
 	margin-bottom: 10px;
 }
 
 #type {
-	font-size: 20px;
+	font-size: 1.25em;20px;
 }
 
 .timeSetTitle {
@@ -33,7 +33,13 @@ body {
 	width: 20px;
 	border-radius: 5px;
 	border: none;
-	background-color: #E8E8E8;
+	/*background-color: #E8E8E8;*/
+	background-color: white;
+	cursor: pointer;
+}
+
+.timeSet button:hover {
+	color: crimson;
 }
 
 #time {
@@ -54,6 +60,11 @@ body {
 	border: none;
 	background-color: #E8E8E8;
 	font-size: 13px;
+	cursor: pointer;
+}
+
+#buttons button:hover {
+	background-color: crimson;
 }
 
 #pomodoro {
