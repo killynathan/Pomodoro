@@ -78,6 +78,9 @@ function startCountdown() {
 		filler.className = "startAnimation";
 		filler.style.animationDuration = seconds + "s";
 	}
+	else {
+		unpauseCountdown();
+	}
 }
 
 function pauseCountdown() {
@@ -141,7 +144,6 @@ function decrementTime() {
 
 startButton.onclick = startCountdown;
 pauseButton.onclick = pauseCountdown;
-resumeButton.onclick = unpauseCountdown;
 resetButton.onclick = resetCountdown;
 
 sessionLengthMinusButton.onclick = decSessionLength;

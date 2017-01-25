@@ -4,6 +4,7 @@
 	<title>Pomodoro</title>
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script src="https://use.fontawesome.com/b99055c522.js"></script>
 </head>
 <body>
 	<p id="title">Nate's Pomodoro</p>
@@ -19,21 +20,31 @@
 			</div>
 		</div>
 		
+		<!--
 		<div id="buttons">
-			<button id="start">start</button>
-			<button id="pause">pause</button>
+			<button>start</button>
+			<button>pause</button>
 			<button id="resume">resume</button>
-			<button id="reset">reset</button>
+			<button>reset</button>
 		</div>	
+		-->
 	</div>
 
-	<div id="pomodoro">
-		<div id="pomodoroFiller">
-			<div id="filler"></div>
+	<div id="pomodoroWrap">
+		<div id="pomodoro">
+			<div id="pomodoroFiller">
+				<div id="filler"></div>
+			</div>
+			<div id="display">
+				<p id="type">Session</p>
+				<p id="time">25:00</p>
+			</div>
 		</div>
-		<div id="display">
-			<p id="type">Session</p>
-			<p id="time">25:00</p>
+
+		<div id="buttonIcons">
+			<i class="fa fa-play" aria-hidden="true" id="start"></i>
+			<i class="fa fa-pause" aria-hidden="true" id="pause"></i>
+			<i class="fa fa-undo" aria-hidden="true" id="reset"></i>
 		</div>
 	</div>
 
