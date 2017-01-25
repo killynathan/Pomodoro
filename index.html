@@ -5,49 +5,42 @@
 	<link rel="stylesheet" type="text/css" href="stylesheet.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="https://use.fontawesome.com/b99055c522.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Alegreya+Sans:100" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100" rel="stylesheet">
 </head>
 <body>
 	<p id="title">Nate's Pomodoro</p>
-	<div>
+	<div id="wrapper">
 		<div>
 			<div class="timeSet">
-				<p class="timeSetTitle">Session Length</p>
-				<p class="timeControls"><div id="sessionLength-">-</div> <div id="sessionLength">25</div> <div id="sessionLength+">+</div></p>
+				<p class="timeSetTitle">Session</p>
+				<div id="sessionLength-">-</div> <div id="sessionLength">25</div> <div id="sessionLength+">+</div>
+				
 			</div>
 			<div class="timeSet">
-				<p class="timeSetTitle">Break Length</p>
-				<p class="timeControls"><div id="breakLength-">-</div> <div id="breakLength">5</div> <div id="breakLength+">+</div></p>
-			</div>
-		</div>
-		
-		<!--
-		<div id="buttons">
-			<button>start</button>
-			<button>pause</button>
-			<button id="resume">resume</button>
-			<button>reset</button>
-		</div>	
-		-->
-	</div>
-
-	<div id="pomodoroWrap">
-		<div id="pomodoro">
-			<div id="pomodoroFiller">
-				<div id="filler"></div>
-			</div>
-			<div id="display">
-				<p id="type">Session</p>
-				<p id="time">25:00</p>
+				<p class="timeSetTitle">Break</p>
+				<div id="breakLength-">-</div> <div id="breakLength">5</div> <div id="breakLength+">+</div>
 			</div>
 		</div>
 
-		<div id="buttonIcons">
-			<i class="fa fa-play" aria-hidden="true" id="start"></i>
-			<i class="fa fa-pause" aria-hidden="true" id="pause"></i>
-			<i class="fa fa-undo" aria-hidden="true" id="reset"></i>
-		</div>
-	</div>
+		<div id="pomodoroWrap">
+			<div id="pomodoro">
+				<div id="pomodoroFiller">
+					<div id="filler"></div>
+				</div>
+				<div id="display">
+					<span id="time">25:00</span>
+					<p id="type">Session</p>
+				</div>
+			</div>
 
+			<div id="buttons">
+				<i class="fa fa-play" aria-hidden="true" id="start"></i>
+				<i class="fa fa-pause" aria-hidden="true" id="pause"></i>
+				<i class="fa fa-undo" aria-hidden="true" id="reset"></i>
+			</div>
+		</div>
+	<div>
 	<script src="script.js"></script>
 </body>
 </html>
