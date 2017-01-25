@@ -1,14 +1,16 @@
 body {
 	text-align: center;
 	font-family: "Open Sans";
-	background-color: #585858;
-	color: white;
+	background-color: #2A3132;
+	color: #90AFC5;
 }
 
 #title {
-	font-size: 1.55em;
+	font-size: 20px;1.55em;
 	margin-bottom: 20px;
-	margin-top: 17px;
+	color: black;#763626;
+	margin: 12px;
+	text-align: left;
 }
 
 #type {
@@ -16,7 +18,7 @@ body {
 }
 
 .timeSetTitle {
-	font-size: 15px;
+	font-size: 18px;
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
@@ -26,25 +28,40 @@ body {
 	margin-right: 50px;
 	margin-left: 50px;
 	margin-bottom: 10px;
+
+	font-size: 25px;
 }
 
 .timeControls {
 	margin-top: 0px;
-	font-size: 22px;
 }
 
-.timeSet button {
+.timeSet div {
 	height: 20px;
 	width: 20px;
 	border-radius: 5px;
 	border: none;
 	/*background-color: #E8E8E8;*/
-	background-color: white;
 	cursor: pointer;
+	display: inline-block;
+
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
 }
 
-.timeSet button:hover {
-	color: crimson;
+#sessionLength {
+	height: 32px;
+	width: 35px;
+}
+
+#breakLength {
+	height: 32px;
+	width: 35px;
+}
+
+.timeSet div:hover {
+	color: #336B87;
 }
 
 #time {
@@ -77,11 +94,11 @@ body {
 	height: 300px;
 	width: 300px;
 	border-radius: 50%;
-	border: solid crimson;
-	margin: -10px auto;
+	border: solid #763626;
+	margin: -12px auto;
 	position: relative;
 	display: inline-block;
-	left: 13px;
+	left: 17px;
 }
 
 #display {
@@ -106,7 +123,7 @@ body {
 	position: absolute;
 	height: 290px;
 	width: 290px;
-	background-color: crimson;
+	background-color: #336B87;
 	top: 290px;
 }
 
@@ -128,12 +145,12 @@ body {
 }
 
 #buttonIcons i:hover {
-	color: crimson;
+	color: #336B87;
 }
 
 #buttonIcons {
 	display: inline-block;
 	position: relative;
 	top: 165px;
-	left: 10px;
+	left: 17px;
 }
