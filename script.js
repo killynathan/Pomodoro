@@ -65,6 +65,10 @@ function decBreakLength() {
 }
 
 function startCountdown() {
+	//startButton.style.color = "#336B87";
+	startButton.classList.add("buttonColor");
+	pauseButton.classList.remove("buttonColor");
+	
 	if (!started) {
 		started = true;
 		inBreak = false;
@@ -84,6 +88,11 @@ function startCountdown() {
 }
 
 function pauseCountdown() {
+
+	startButton.classList.remove("buttonColor");
+	pauseButton.classList.add("buttonColor");
+
+
 	isPaused = true;
 	filler.style.animationPlayState = "paused";
 }
@@ -94,6 +103,10 @@ function unpauseCountdown() {
 }
 
 function resetCountdown() {
+
+	startButton.classList.remove("buttonColor");
+	pauseButton.classList.remove("buttonColor");
+
 	started = false;
 	isPaused = false;
 

@@ -84,7 +84,7 @@ body {
 	width: 35px;
 }
 
-.timeSet div:hover {
+.timeSetButton:hover {
 	color: #336B87;
 }
 
@@ -151,4 +151,8 @@ body {
 #buttons {
 	position: relative;
 	margin-top: 40px;
+}
+
+.buttonColor {
+	color: #336B87;
 }
