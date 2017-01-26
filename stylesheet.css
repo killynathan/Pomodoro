@@ -13,13 +13,13 @@ body {
 	bottom: 0;
 	margin: auto;
 	display: block;
-	height: 590px;
+	height: 420px;
 	width: 470px;
 	/*border: solid 2px black;*/
 }
 
 #title {
-	font-size: 30px;
+	font-size: 20px;
 	margin-bottom: 20px;
 	color: white;
 	margin: 12px;
@@ -27,33 +27,32 @@ body {
 }
 
 #time {
-	font-size: 80px;
+	font-size: 60px;
 	margin-bottom: 0px;
 	vertical-align: middle;
 
 }
 
 #type {
-	font-size: 25px;
+	font-size: 130%; 25px;
 	margin-top: 0px;
 	color: #90AFC5;
 }
 
 .timeSetTitle {
-	font-size: 20px;
+	font-size: 15px;
 	margin-top: 0px;
-	margin-bottom: 5px;
+	margin-bottom: 0px;
 	color: #90AFC5;
-;
 }
 
 .timeSet {
 	display: inline-block;
-	margin-right: 50px;
-	margin-left: 50px;
+	margin-right: 52px;
+	margin-left: 52px;
 	margin-bottom: 10px;
 
-	font-size: 40px;
+	font-size: 30px;
 }
 
 .timeControls {
@@ -89,12 +88,12 @@ body {
 }
 
 #pomodoroWrap {
-	margin-top: 30px;
+	margin-top: 10px;
 }
 
 #pomodoro {
-	height: 400px;
-	width: 400px;
+	height: 280px;
+	width: 280px;
 	border-radius: 50%;
 	border: solid #763626;
 	margin: auto;
@@ -103,13 +102,13 @@ body {
 
 #display {
 	position: relative;
-	top: 160px;
+	top: 100px;
 }
 
 #pomodoroFiller {
 	position: absolute;
-	height: 390px;
-	width: 390px;
+	height: 270px;
+	width: 270px;
 	border-radius: 50%;
 	margin: auto;
 	top: 0;
@@ -121,10 +120,10 @@ body {
 
 #filler {
 	position: absolute;
-	height: 390px;
-	width: 390px;
+	height: 270px;
+	width: 270px;
 	background-color: #336B87; #763626;
-	top: 390px;
+	top: 280px;
 }
 
 .startAnimation {
@@ -133,14 +132,14 @@ body {
 }
 
 @keyframes filler {
-	from {top: 390px;}
+	from {top: 270px;}
 	to {top: 0px;}
 }
 
 #buttons i {
-	font-size: 30px;
-	margin-left: 30px;
-	margin-right: 30px;
+	font-size: 20px;
+	margin-left: 40px;
+	margin-right: 40px;
 	cursor: pointer;
 }
 
@@ -150,7 +149,7 @@ body {
 
 #buttons {
 	position: relative;
-	margin-top: 40px;
+	margin-top: 30px;
 }
 
 .buttonColor {
